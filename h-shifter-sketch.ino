@@ -1,4 +1,4 @@
-// 8 speed H shifter using 4 switches (plus neutral), by Akaki Kuumeri - Updated with 7-Segment Display
+// 8 speed H shifter using 4 switches (plus neutral)- Updated with 7-Segment Display
 #include <Joystick.h>
 
 // --- INPUT PINS ---
