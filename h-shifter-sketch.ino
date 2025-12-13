@@ -7,7 +7,7 @@
 // 4: X right extreme
 // 5: X up
 // 6: Y down
-#define IGNITION_PIN 19 // New: Ignition Button on Pin 19 (A5)
+#define IGNITION_PIN 21 // New: Ignition Button on Pin 21 (A3)
 
 #define LEFT 0
 #define RIGHT 1
