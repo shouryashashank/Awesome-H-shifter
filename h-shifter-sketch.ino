@@ -11,8 +11,8 @@
 
 #define LEFT 0
 #define RIGHT 1
-#define RIGHTEXTREME 2
-#define UP 3
+#define RIGHTEXTREME 3  // mistakenly soldered in wrong pin
+#define UP 2
 #define DOWN 4
 #define IGNITION_INPUT_INDEX 5 // Index 5 in the input array
 
