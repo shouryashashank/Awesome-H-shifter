@@ -36,6 +36,8 @@ Required parts (suggested):
 - 1 ignition push button
 - 1 single-digit 7-segment display (common-anode by default in the sketch)
 - Wires, soldering tools, optional perfboard, enclosure and 3D-printed housing
+- M3 nuts and bolts (20 mm and 30 mm or other similar lengths)
+- 2 Rubber bands
 
 See the included schematic for wiring and footprint details.
 
