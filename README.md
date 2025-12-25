@@ -29,8 +29,7 @@ A DIY 8-speed H-pattern shifter that converts a physical H-stick and switches in
 Required parts (suggested):
 
 - Arduino Pro Micro (ATmega32U4) or equivalent
-- 4 momentary switches wired in an H pattern (left/right/up/down)
-- 1 neutral switch
+- 5 momentary switches wired in an H pattern (left/right/extreme right/up/down)
 - 1 ignition push button
 - 1 single-digit 7-segment display (common-anode by default in the sketch)
 - Wires, soldering tools, optional perfboard, enclosure and 3D-printed housing
@@ -118,7 +117,7 @@ The `3d-print files/` folder contains printable and editable models:
 
 Notes:
 - Use either the body-with-clamp file or a plain body `.stl` (if you have one); there is no need to print both.
-- The clamp version is slightly more complex to print and may not be feasible on some bedslinger printers. The other parts are straightforward.
+- The clamp version of the body is slightly more complex to print and may not be feasible on some bedslinger printers. The other parts are straightforward.
 - Additional STEP models and the full original design are available from the creator's page: https://github.com/akakikuumeri/Akaki-H-shifter
 - If you use the original body design, print clamps from: https://makerworld.com/en/models/504560-g-clamp-deeper?from=search#profileId-420208
 
