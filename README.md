@@ -2,6 +2,8 @@
 
 A DIY 8-speed H-pattern shifter that converts a physical H-stick and switches into a USB gamepad for sim racing. The project uses a Arduino Pro Micro (ATmega32U4) and a single-digit 7-segment display to show the current gear, plus an ignition button that runs a loading animation.
 
+<img width="200" alt="image" src="https://github.com/user-attachments/assets/dfe48835-6a08-469d-ab43-f14f92e1588e" />
+
 ---
 
 ## Features
