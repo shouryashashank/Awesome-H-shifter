@@ -109,6 +109,20 @@ Joystick mapping (USB gamepad):
 
 ---
 
+## 3D printing files
+
+The `3d-print files/` folder contains printable and editable models:
+
+- `8shifter-body-new-clamp.3mf` — shifter body with integrated clamp
+- `shift light.step` — STEP model of the shift display; edit to add more buttons if needed
+
+Notes:
+- Use either the body-with-clamp file or a plain body `.stl` (if you have one); there is no need to print both.
+- The clamp version is slightly more complex to print and may not be feasible on some bedslinger printers. The other parts are straightforward.
+- Additional STEP models and the full original design are available from the creator's page: https://github.com/akakikuumeri/Akaki-H-shifter
+- If you use the original body design, print clamps from: https://makerworld.com/en/models/504560-g-clamp-deeper?from=search#profileId-420208
+
+
 ## Contributing
 
 Contributions, issues and pull requests are welcome. When submitting changes, prefer small focused commits and document any pin or wiring changes.
