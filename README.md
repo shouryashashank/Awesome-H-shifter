@@ -127,6 +127,20 @@ Notes:
 - Additional STEP models and the full original design are available from the creator's page: https://github.com/akakikuumeri/Akaki-H-shifter
 - If you use the original body design, print clamps from: https://makerworld.com/en/models/504560-g-clamp-deeper?from=search#profileId-420208
 
+---
+
+## Credits
+
+- Original 3D model and design by Akaki Kuumeri: https://github.com/akakikuumeri/Akaki-H-shifter
+    - Akaki Kuumeri GitHub: https://github.com/akakikuumeri
+- Original build and showcase video by Akaki Kuumeri: https://www.youtube.com/watch?v=fTknGo8n0Co
+    - Akaki Kuumeri YouTube channel: https://www.youtube.com/@akakikuumeri
+- Detailed assembly video by S60Team: https://www.youtube.com/watch?v=xyWhzIESEnE
+  - S60Team YouTube channel: https://www.youtube.com/@S60Team
+- Clamp designer on MakerWorld: https://makerworld.com/en/@sweb3791
+  - G-Clamp deeper model: https://makerworld.com/en/models/504560-g-clamp-deeper?from=search#profileId-420208
+
+---
 
 ## Contributing
 
