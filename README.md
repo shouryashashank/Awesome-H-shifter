@@ -11,14 +11,15 @@ A DIY 8-speed H-pattern shifter that converts a physical H-stick and switches in
 - Exposes gears and ignition as joystick buttons via the Arduino Joystick library (native USB)
 - Simple wiring based on a Arduino Pro Micro (or any compatible ATmega32U4 board)
 - Single 7-segment display for gear/neutral/reverse feedback
-- Eagle schematic included for reference (`awsome-H-shifter.sch`)
+- Eagle schematic included for reference (`awesome-H-shifter.sch`)
 
 ---
 
 ## Repository contents
 
-- `awsome-H-shifter.sch` — Eagle schematic showing wiring of the Arduino Pro Micro, switches and 7-segment display
+- `awesome-H-shifter.sch` — Eagle schematic showing wiring of the Arduino Pro Micro, switches and 7-segment display
 - `h-shifter-sketch.ino` — Arduino sketch for reading the shifter, updating the display and reporting joystick buttons
+- `3d-print files` — contains the 3d print files for the shifter
 - `README.md` — this file
 - `LICENSE` — project license
 
@@ -35,6 +36,8 @@ Required parts (suggested):
 - Wires, soldering tools, optional perfboard, enclosure and 3D-printed housing
 
 See the included schematic for wiring and footprint details.
+
+ps: DO NOT get Arduino uno or nano. we need a micro processor with HID capability. you can use any other micro processor that has HID support like esp32 or raspberry pie zero (will have to re write the code)
 
 ---
 
@@ -103,7 +106,7 @@ Joystick mapping (USB gamepad):
 
 ## Schematic and photos
 
-- See `awsome-H-shifter.sch` for the full Eagle schematic.
+- See `awesome-H-shifter.sch` for the full Eagle schematic.
 - The repository includes photos of an example 3D-printed shifter housing and wiring for reference.
 
 <img width="500" alt="image" src="https://github.com/user-attachments/assets/c16eb23b-fede-475f-8223-b3024f93efef" />
