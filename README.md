@@ -1,2 +1,124 @@
-Awesome-H-shifter
-<img width="932" height="724" alt="image" src="https://github.com/user-attachments/assets/613f3c88-04d0-442b-9577-fd2e4ef52d65" />
+# Awesome H-Shifter
+
+A DIY 8-speed H-pattern shifter that converts a physical H-stick and switches into a USB gamepad for sim racing. The project uses a Arduino Pro Micro (ATmega32U4) and a single-digit 7-segment display to show the current gear, plus an ignition button that runs a loading animation.
+
+---
+
+## Features
+
+- 8 forward positions (1–7) + Reverse (R) + Neutral
+- Ignition push-button that triggers a loading animation and can disable gear outputs while pressed
+- Exposes gears and ignition as joystick buttons via the Arduino Joystick library (native USB)
+- Simple wiring based on a Arduino Pro Micro (or any compatible ATmega32U4 board)
+- Single 7-segment display for gear/neutral/reverse feedback
+- Eagle schematic included for reference (`awsome-H-shifter.sch`)
+
+---
+
+## Repository contents
+
+- `awsome-H-shifter.sch` — Eagle schematic showing wiring of the Arduino Pro Micro, switches and 7-segment display
+- `h-shifter-sketch.ino` — Arduino sketch for reading the shifter, updating the display and reporting joystick buttons
+- `README.md` — this file
+- `LICENSE` — project license
+
+---
+
+## Hardware
+
+Required parts (suggested):
+
+- Arduino Pro Micro (ATmega32U4) or equivalent
+- 4 momentary switches wired in an H pattern (left/right/up/down)
+- 1 neutral switch
+- 1 ignition push button
+- 1 single-digit 7-segment display (common-anode by default in the sketch)
+- Wires, soldering tools, optional perfboard, enclosure and 3D-printed housing
+
+See the included schematic for wiring and footprint details.
+
+---
+
+## Wiring / Pin mapping
+
+The wiring in `h-shifter-sketch.ino` maps pins as follows (Pro Micro pin numbers):
+
+- Shifter inputs (configured INPUT_PULLUP):
+  - Pin 2 -> LEFT
+  - Pin 3 -> RIGHT
+  - Pin 4 -> RIGHTEXTREME
+  - Pin 5 -> UP
+  - Pin 6 -> DOWN
+- Ignition button: Pin 21 (A3) — INPUT_PULLUP (active low)
+
+7-segment segment pins (as defined in sketch):
+- SEG_A: 7
+- SEG_B: 8
+- SEG_C: 9
+- SEG_D: 10
+- SEG_E: 16 (A2)
+- SEG_F: 14 (A0)
+- SEG_G: 18 (A4)
+
+Joystick mapping (USB gamepad):
+- Buttons 0..7 represent gears 1..8 (button index = gear-1)
+- Button 8 (index 8) is ignition
+
+---
+
+## Software / Upload
+
+1. Open `h-shifter-sketch.ino` in the Arduino IDE or PlatformIO.
+2. Select the correct board (Pro Micro or other ATmega32U4 board) and the correct port.
+3. Ensure a compatible Joystick library is available. The sketch uses the built-in Joystick support for 32U4 cores; if your core lacks it, install an appropriate Joystick library.
+4. Compile and upload the sketch.
+5. Test the device in your OS game controller settings or in a game — the board should enumerate as a USB gamepad with 9 buttons.
+
+---
+
+## Behavior summary
+
+- With ignition NOT pressed: the shifter inputs determine the gear. Neutral is used when no direction is pressed.
+- With ignition pressed: the sketch runs a spinning/loading animation on the 7-segment and gear outputs remain disabled (configurable).
+- The sketch only sends changed button states to the host to minimize USB traffic.
+
+---
+
+## Customization
+
+- To use a common-cathode display, set `IS_COMMON_CATHODE` in `h-shifter-sketch.ino` to `true` and adjust wiring if needed.
+- Remap input or segment pins by editing the `#define` statements at the top of `h-shifter-sketch.ino`.
+- Add debounce or filtering to the input reads if you experience noisy switches.
+- Change joystick button count or behavior in the Joystick constructor if you add more inputs.
+
+---
+
+## Troubleshooting
+
+- Device not enumerating: make sure you uploaded to an ATmega32U4-based board (native USB). Reflash bootloader if necessary.
+- Segments appear inverted or incorrect: confirm whether the display is common-anode (default) or common-cathode and set `IS_COMMON_CATHODE` accordingly.
+- Phantom gear changes: implement debouncing (software or hardware), add short delays after reads, or use capacitors / better switch contacts.
+- Wrong pin numbers: double-check the Pro Micro pin labels (A0/A1/A2 etc. may be mapped to different digital numbers depending on core).
+
+---
+
+## Schematic and photos
+
+- See `awsome-H-shifter.sch` for the full Eagle schematic.
+- The repository includes photos of an example 3D-printed shifter housing and wiring for reference.
+
+---
+
+## Contributing
+
+Contributions, issues and pull requests are welcome. When submitting changes, prefer small focused commits and document any pin or wiring changes.
+
+---
+
+## License
+
+See the `LICENSE` file in this repository.
+
+---
+
+Enjoy building and racing!
