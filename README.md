@@ -106,6 +106,12 @@ Joystick mapping (USB gamepad):
 - See `awsome-H-shifter.sch` for the full Eagle schematic.
 - The repository includes photos of an example 3D-printed shifter housing and wiring for reference.
 
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/c16eb23b-fede-475f-8223-b3024f93efef" />
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/e48a7c2a-67cc-47dd-a45a-820e0e89f8f5" />
+
+
+
+
 ---
 
 ## 3D printing files
