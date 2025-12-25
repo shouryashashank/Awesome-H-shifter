@@ -108,7 +108,7 @@ Joystick mapping (USB gamepad):
 
 <img width="500" alt="image" src="https://github.com/user-attachments/assets/c16eb23b-fede-475f-8223-b3024f93efef" />
 <img width="500" alt="image" src="https://github.com/user-attachments/assets/e48a7c2a-67cc-47dd-a45a-820e0e89f8f5" />
-
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/948c8e64-ab19-4ce8-b4d0-378abcff49b6" />
 
 
 
